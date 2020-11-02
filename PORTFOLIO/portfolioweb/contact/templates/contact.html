@@ -1,0 +1,43 @@
+{% extends 'index.html' %} {% load static from static %} {% block content %} {% block header %}{% endblock %}
+<div id="contact" class="text-center">
+    <div class="overlay">
+        <div class="container">
+            <div class="section-title center">
+                <h2>Estamos en contacto</h2>
+                <hr>
+            </div>
+            <div class="col-md-8 col-md-offset-2">
+                <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" id="name" class="form-control" placeholder="Nombre" required="required">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="email" id="email" class="form-control" placeholder="Correo" required="required">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="message" class="form-control" rows="4" placeholder="Mensaje" required></textarea>
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div id="success"></div>
+                    <button type="submit" class="btn btn-default">Enviar Mensaje</button>
+                </form>
+                <div class="social">
+                    <ul>
+                        <li><a href="https://www.facebook.com/JoseMaria.Sanchis.Bello/?viewas=100000686899395"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/jose-maria-sanchis-bello-25677083/"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

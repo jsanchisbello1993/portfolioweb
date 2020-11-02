@@ -1,0 +1,129 @@
+{% extends 'index.html' %} {% load static %} {% block title %}{% endblock %} {% block content %} {% block header %}{% endblock %}
+<main role="main">
+    <div class="container">
+
+        <div id="about">
+            <div class="container">
+                <div class="section-title text-center center">
+                    <h2>Sobre mi</h2>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6"> <img src="{% static 'img/about.jpeg' %}" class="img-responsive" alt=""> </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="about-text">
+                            <p>Graduado superior en <b>Desarrollo de Aplicaciones Web</b> por grupo Studio tanto en la parte <b>Front-end</b> como en la parte <b>Back-end</b></p>
+                            <p>Me considero una persona comprometida, entusiasta y trabajadora. Muy intersesado en adquirir experiencia en el campo tecnológico</p>
+                            <a href="#portfolio" style="color: black !important;" class="btn btn-primary btn-lg page-scroll">Mi Portfolio</a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trabajando actualmente -->
+        <div class="container">
+            <div class="section-title text-center center">
+                <h2>Experiencia laboral</h2>
+                <hr>
+            </div>
+
+            <div class="row mt-4 row_experiencia">
+                <div class="col-md-4 mt-4 width_experiencia">
+                    <h3 style="font-weight: 400;">25/09/2020 || ACTUALIDAD</h3>
+                </div>
+                <div class="col-md-4 mt-4 width_experiencia">
+                    <h3>McDonald's Palacio de Deportes (Granada)</h3>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <p style="color: black;">Prácticas de profesor de educación física en cursos de 1º de E.S.O hasta 1º de Bachillerato</p>
+                </div>
+
+            </div>
+
+            <!-- Experiencia 1 -->
+            <div class="row mt-4 row_experiencia">
+                <div class="col-md-4 mt-4 width_experiencia">
+                    <h3 style="font-weight: 400;">23/05/2020 || 14/08/2020</h3>
+                </div>
+                <div class="col-md-4 mt-4 width_experiencia">
+                    <h3>LIVE4LIFE (Valencia, Valencia)</h3>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <p style="color: black;"><b>Desarrollador Web Fullstack.</b> Me encargaba de hacer cambios y añadiendo nuevas funcionalidades en la web de la empresa, solucionando problemas tanto de frontend como backend</p>
+                </div>
+
+            </div>
+            <!-- Experiencia 2 -->
+            <div class="row mt-4 row_experiencia">
+                <div class="col-md-4 mt-4">
+                    <h3 style="font-weight: 400;">22/11/2019 || 31/12/2019</h3>
+                </div>
+                <div class="col-md-4 mt-4 width_experiencia">
+                    <h3>Pancracio chocolates (Valencia, Algemesí)</h3>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <p style="color: black;">Proceso de fabricación, envasado del producto y preparación para el transporte.</p>
+                </div>
+
+            </div>
+            <!-- Experiencia 3 -->
+            <div class="row mt-4 row_experiencia">
+                <div class="col-md-4 mt-4 width_experiencia">
+                    <h3 style="font-weight: 400;">25/01/2013 || 14/08/2019</h3>
+                </div>
+                <div class="col-md-4 mt-4 width_experiencia">
+                    <h3>McDonald's (Valencia, Massalfassar)</h3>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <p style="color: black;">Proceso de preparación del producto (hamburguesas) y tomador de pedidos.</p>
+                </div>
+
+            </div>
+            <!-- Experiencia 4 -->
+            <div class="row mt-4 row_experiencia">
+                <div class="col-md-4 mt-4 width_experiencia">
+                    <h3 style="font-weight: 400;">06/06/2017 || 09/12/2017</h3>
+                </div>
+                <div class="col-md-4 mt-4 width_experiencia">
+                    <h3>La Hípica (Valencia, Valencia)</h3>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <p style="color: black;">Camarero en comuniones y comidas de empresa</p>
+                </div>
+
+                <!-- Experiencia 5 -->
+            </div>
+            <div class="row mt-4 row_experiencia">
+                <div class="col-md-4 mt-4 width_experiencia">
+                    <h3 style="font-weight: 400;">20/03/2016 || 20/06/2016</h3>
+                </div>
+                <div class="col-md-4 mt-4 width_experiencia">
+                    <h3>Colegio El Vedat (Valencia, Torrent)</h3>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <p style="color: black;">Prácticas de profesor de educación física en cursos de 1º de E.S.O hasta 1º de Bachillerato</p>
+                </div>
+
+            </div>
+            <div class="row mt-4 row_experiencia">
+                <div class="col-md-4 mt-4 width_experiencia">
+                    <h3 style="font-weight: 400;">01/07/2012 || 31/07/2012</h3>
+                </div>
+                <div class="col-md-4 mt-4 width_experiencia">
+                    <h3>Empresa Ponette (Valencia, Alaquás)</h3>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <p style="color: black;">Manipulador de productos y mozo de almacén</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="btn btn-primary" style="margin-top: 40px; margin-left: 40%; width: 20%; padding: 20px;margin-top: 2%;margin-bottom: 2%;">
+        <a class="a" href="{% static 'pdfs/CV_JMSB.pdf' %}" download="Reporte2Mayo2010">
+        Descargar CV José Mª
+        </a>
+    </div>
+</main>
+{% endblock %}

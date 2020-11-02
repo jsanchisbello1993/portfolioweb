@@ -1,0 +1,93 @@
+{% extends 'index.html' %} {% load static from static %} {% block content %} {% block header %}{% endblock %}
+<div id="portfolio">
+    <div class="container">
+        <div class="section-title text-center center">
+            <h2>Portfolio</h2>
+            <hr>
+        </div>
+        <div class="categories">
+            <ul class="cat">
+                <li>
+                    <ol class="type">
+                        <li><a href="#" data-filter="*" class="active">All</a></li>
+                        <li><a href="#" data-filter=".web">Diseño Web</a></li>
+                        <li><a href="#" data-filter=".app">App Development</a></li>
+                        <li><a href="#" data-filter=".branding">Branding</a></li>
+                    </ol>
+                </li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+        <div class="row">
+            <div class="portfolio-items">
+                <div class="col-sm-6 col-md-3 col-lg-3 web">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="https://github.com/jsanchisbello1993/calculadora.git" target="_blank" title="Project description" rel="prettyPhoto">
+                                <div class="hover-text">
+                                    <h4>Calculadora Co2</h4>
+                                    <small>Diseño Web</small> </div>
+                                <img src="{% static 'img/tfg.PNG' %}" class="img-responsive" alt="Project Title"> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3 app">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="https://github.com/jsanchisbello1993/viacar.com.git" target="_blank" title="Project description" rel="prettyPhoto">
+                                <div class="hover-text">
+                                    <h4>Viacar</h4>
+                                    <small>Desarrollo Apps</small> </div>
+                                <img src="{% static 'img/viacar-large.PNG' %}" class="img-responsive" alt="Project Title"> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3 web">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="https://github.com/jsanchisbello1993/tiendaOnline.git" target="_blank" title="Project description" rel="prettyPhoto">
+                                <div class="hover-text">
+                                    <h4>Comercio online</h4>
+                                    <small>Desarrollo Apps</small> </div>
+                                <img src="{% static 'img/shop.PNG' %}" class="img-responsive" alt="Project Title"> </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Achievements Section -->
+<div id="achievements" class="text-center">
+    <div class="container">
+        <div class="section-title center">
+            <h2>Algunas estadísticas</h2>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="200ms">
+                <div class="achievement-box"> <span class="count">310</span>
+                    <h4>Happy Clients</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="400ms">
+                <div class="achievement-box"> <span class="count">4700</span>
+                    <h4>Hours of Work</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="600ms">
+                <div class="achievement-box"> <span class="count">30</span>
+                    <h4>Awards Won</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="800ms">
+                <div class="achievement-box"> <span class="count">8</span>
+                    <h4>Years of Experience</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

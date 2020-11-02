@@ -1,0 +1,28 @@
+{% extends 'index.html' %} {% load static from static %} {% block content %} {% block header %}{% endblock %}
+<div id="about">
+    <div class="container">
+        <div class="section-title text-center center">
+            <h2>Sobre mi</h2>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-6"> <img src="{% static 'img/about.jpeg' %}" class="img-responsive" alt=""> </div>
+            <div class="col-xs-12 col-md-6">
+                <div class="about-text">
+                    <p>Graduado superior en <b>Desarrollo de Aplicaciones Web</b> por grupo Studio tanto en la parte <b>Front-end</b> como en la parte <b>Back-end</b></p>
+                    <p>Me considero una persona comprometida, entusiasta y trabajadora. Muy intersesado en adquirir experiencia en el campo tecnológico</p>
+                    <a href="#portfolio" class="btn btn-primary btn-lg page-scroll">Mi Portfolio</a> </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="experiencia">
+    <div class="container">
+        <div class="section-title text-center center">
+            <h2>Experiencia</h2>
+            <hr>
+        </div>
+    </div>
+</div>
+{% endblock %}
