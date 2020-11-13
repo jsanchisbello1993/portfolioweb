@@ -144,7 +144,15 @@ hr {
 }
 
 .navbar .navbar-collapse {
-    text-align: center;
+    text-align: right;
+    margin-right: 15px;
+}
+
+@media (max-width: 667px) {
+    .navbar .navbar-collapse {
+        text-align: center;
+        margin-right: 0px;
+    }
 }
 
 .navbar-custom {
@@ -848,4 +856,119 @@ i{
 
 .width_experiencia {
     width: 33%;
+}
+
+@media (max-width: 667px) {
+    .width_experiencia {
+        margin-left: 30px;
+    }
+}
+
+.descargar_pdf {
+    margin-top: 40px;
+    margin-left: 40%;
+    width: 20%;
+    padding: 20px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+@media (max-width: 667px) {
+    .descargar_pdf {
+        margin-left: 22% !important;
+        width: 57% !important;
+    }
+}
+
+@media (max-width: 667px) {
+    h2 {
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 667px) {
+    .btn_portfolio {
+        margin-left: 64px;
+    }
+}
+
+.img_skills {
+    margin-left: 22px;
+}
+
+@media (max-width: 667px) {
+    .img_skills {
+        margin-left: -46%;
+        height: 277px;
+    }
+}
+
+@media (max-width: 667px) {
+    .img_django {
+        width: 318px;
+        margin-left: 0%;
+    }
+}
+
+@media (max-width: 667px) {
+    .img_php {
+        width: 323px;
+        margin-left: -2%;
+    }
+}
+
+@media (max-width: 667px) {
+    .img_word {
+        width: 319px;
+        margin-left: -1%;
+    }
+}
+
+@media (max-width: 667px) {
+    .img_xd {
+        width: 441px;
+        margin-left: -20%;
+    }
+}
+
+@media (max-width: 667px) {
+    .img_js {
+        margin-left: -16%;
+    }
+}
+
+@media (max-width: 667px) {
+    .img_java {
+        width: 314px;
+        margin-left: 0%;
+    }
+}
+
+@media (max-width: 667px) {
+    .img_boots {
+        width: 411px;
+        margin-left: -48px;
+    }
+}
+
+@media (max-width: 667px) {
+    .img_py {
+        margin-left: -6%;
+        width: 351px;
+    }
+}
+
+@media (max-width: 667px) {
+    .img_html,
+    .img_css {
+        width: 356px;
+        margin-left: -8%;
+    }
+}
+
+@media (max-width: 667px) {
+    .img_jq {
+        margin-left: -16%;
+    }
 }
