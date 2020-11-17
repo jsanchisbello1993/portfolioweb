@@ -972,3 +972,11 @@ i{
         margin-left: -16%;
     }
 }
+
+.saber_mas_btn {
+    background-color: #666;
+}
+
+.saber_mas_btn :hover {
+    background-color: rgba(0, 0, 0, 0.733);
+}

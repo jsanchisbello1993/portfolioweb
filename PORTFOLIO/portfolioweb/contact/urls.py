@@ -1,6 +1,5 @@
 from django.urls import path
 from . import views
-from contact.views import ContactView
 
 """portfolioweb URL Configuration
 
@@ -19,5 +18,5 @@ Including another URLconf
 """
 
 urlpatterns = [
-    path('contacto/', ContactView.as_view(), name='contacto')
+    path('contacto/', views.contact, name='contacto')
 ]

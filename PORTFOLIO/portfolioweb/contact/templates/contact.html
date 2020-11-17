@@ -2,32 +2,43 @@
 <div id="contact" class="text-center">
     <div class="overlay">
         <div class="container">
-            <div class="section-title center">
+            <div class=" center">
                 <h2>Estamos en contacto</h2>
                 <hr>
             </div>
             <div class="col-md-8 col-md-offset-2">
-                <form name="sentMessage" id="contactForm" novalidate>
+                {% if 'ok' in request.GET %}
+                <p><b>Su mensaje se ha enviado correctamente, en breve me pongo en concacto con usted</b></p>
+                {% endif %}
+                <form action="" method="POST">
                     <div class="row">
                         <div class="col-md-6">
+                            {% csrf_token %}
                             <div class="form-group">
-                                <input type="text" id="name" class="form-control" placeholder="Nombre" required="required">
-                                <p class="help-block text-danger"></p>
+                                <div class="input-group">
+                                    {{form.name}}
+                                </div>
+                                {{form.name.errors}}
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="email" id="email" class="form-control" placeholder="Correo" required="required">
-                                <p class="help-block text-danger"></p>
+                                <div class="input-group">
+                                    {{form.email}}
+                                </div>
+                                {{form.email.errors}}
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
-                        <textarea name="message" id="message" class="form-control" rows="4" placeholder="Mensaje" required></textarea>
-                        <p class="help-block text-danger"></p>
+                        <div class="input-group">
+                            {{form.content}}
+                        </div>
+                        {{form.content.errors}}
                     </div>
-                    <div id="success"></div>
-                    <button type="submit" class="btn btn-default">Enviar Mensaje</button>
+                    <div class="text-center">
+                        <input type="submit" class="btn btn-default" value="Enviar Mensaje">
+                    </div>
                 </form>
                 <div class="social">
                     <ul>
